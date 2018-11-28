@@ -8,11 +8,11 @@ uWSGI is serving Django application
 
 ####Enviroment
 ```
-1. Vagrant=1.8
+1. Vagrant=2.0.1
 2. Ansible=2.1
-3. Ubuntu Server=14.04 trusty
-4. Python=2.7
-5. Django=1.10
+3. Ubuntu Server=18.04
+4. Python=3.7
+5. Django=2.1.3
 6. Postgresql=9.4
 7. Nginx
 8. uWSGI
