@@ -15,21 +15,21 @@
 - name: Installing apt packages i.e python, postgres, nginx, git etc
   apt: name={{item}}
   with_items:
-      - python-pip
-      - python-dev
+      - python3-pip
+      - python3-dev
       - libpq-dev
       - python-software-properties
       - software-properties-common
-      - python-psycopg2
-      - postgresql-9.4
+      - python3-psycopg2
+      - postgresql
       - postgresql-contrib
       - git
       - nginx
 
 
 
-- name: install python virtualenv and uWSGI using PIP
-  pip: name={{item}}
+- name: install python virtualenv and uWSGI using PIP3
+  pip: executable=pip3 name={{item}}
   with_items:
         - virtualenv
         - uwsgi
